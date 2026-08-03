@@ -91,7 +91,6 @@ This investigation demonstrates how file signatures are analyzed without using t
 - Format-Hex output
 - File metadata
 - Header comparison
-- Cleanup validation
 
 ---
 
