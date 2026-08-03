@@ -62,4 +62,4 @@ Investigation Completed
 
 # Summary
 
-The investigation validated authenticity of files  by validating internal file signatures instead of relying on visible file extensions. Using PowerShel, the lab successfully identified a disguised executable through its "MZ" header, demonstrated the risks of extension spoofing, and reinforced the importance of file signature validation during  DFIR investigations.
+The investigation validated authenticity of files  by validating internal file signatures instead of relying on visible file extensions. Using PowerShel, the lab successfully identified a disguised executable through its "MZ" header.
