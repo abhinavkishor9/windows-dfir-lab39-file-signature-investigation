@@ -41,8 +41,8 @@ This investigation demonstrates how file signatures are analyzed without using t
 # Tools Used
 
 - Windows 10
-- Windows PowerShell
-- Format-Hex
+- PowerShell
+- Format-Hex in PowerShell
 - File Explorer
 
 ---
@@ -89,7 +89,6 @@ This investigation demonstrates how file signatures are analyzed without using t
 - Sample text file
 - Disguised executable
 - Format-Hex output
-- PowerShell enumeration
 - File metadata
 - Header comparison
 - Cleanup validation
@@ -98,18 +97,18 @@ This investigation demonstrates how file signatures are analyzed without using t
 
 # Evidence Correlation
 
-The investigation correlated multiple Windows artifacts to validate file authenticity:
+This DFIR investigation correlated multiple Windows artifacts to check the authenticity of the files:
 
 - File extensions were compared with internal file signatures.
 - PowerShell revealed executable headers hidden behind misleading filenames. What looked like txt or pdf contained executable headers.
 - File metadata supported evidence validation.
-- Header analysis confirmed the true file type despite extension spoofing.
+- Header analysis confirmed the actual file type.
 
 ---
 
 # Investigation Findings
 
-The investigation confirmed that file extensions alone cannot be trusted during forensic analysis. Header inspection successfully identified a disguised executable by revealing the "MZ" file signature, demonstrating why investigators rely on file signatures instead of filenames when validating suspicious files.
+The investigation confirmed that you cannot trust only file extensions during DFIR analysis. Header inspection successfully identified a disguised executable by revealing the "MZ" file signature for it. This shows that in DFIR analysis, we depend on file signatures instead of file extensions, as file extensions can bs spoofed by attackers to mislead analysts.
 
 ---
 
