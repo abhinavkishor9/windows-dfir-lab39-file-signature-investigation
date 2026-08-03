@@ -1,0 +1,65 @@
+# Investigation Timeline
+
+| Step | Activity | Evidence |
+|------|----------|----------|
+| 1 | Created workspace | PowerShell |
+| 2 | Created sample text file in workspace | Payroll.txt |
+| 3 | Copied executable and renamed it to Invoice.pdf | PowerShell |
+| 4 | Verified file extensions | Get-ChildItem |
+| 5 | Validated executable file signature | Format-Hex |
+| 6 | Validated text file signature | Format-Hex |
+| 7 | Compared file signatures | Documentation |
+| 8 | Correlated evidence | Investigation Notes |
+| 9 | Removed lab artifacts | Remove-Item |
+
+---
+
+# Investigation Flow
+
+Investigation Started
+
+↓
+
+Created Workspace
+
+↓
+
+Created sample text file in workspace
+
+↓
+
+Simulated Extension Spoofing
+
+↓
+
+Verified File Extensions
+
+↓
+
+Validated File Signatures
+
+↓
+
+Compared File Signatures
+
+↓
+
+Correlated Evidence in the lab
+
+↓
+
+Documented Findings from the lab
+
+↓
+
+Removed Lab Artifacts
+
+↓
+
+Investigation Completed
+
+---
+
+# Summary
+
+The investigation validated authenticity of files  by validating internal file signatures instead of relying on visible file extensions. Using PowerShel, the lab successfully identified a disguised executable through its "MZ" header, demonstrated the risks of extension spoofing, and reinforced the importance of file signature validation during  DFIR investigations.
